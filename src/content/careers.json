@@ -1,0 +1,402 @@
+[
+  {
+    "slug": "hr-talent-acquisition-intern",
+    "title": "HR & Talent Acquisition Intern",
+    "team": "Business internships",
+    "location": "Remote or Jaipur",
+    "summary": "Help us build the core team at Cynbit.",
+    "about": "Help us architect the core team at Cynbit.",
+    "responsibilities": [
+      "Screen candidate profiles for technical and cultural fit.",
+      "Coordinate interview schedules with architectural leads.",
+      "Support hiring initiatives and onboarding processes.",
+      "Manage candidate database and recruitment pipeline."
+    ],
+    "requirements": [
+      "Excellent interpersonal and communication skills.",
+      "Organizational and time-management abilities.",
+      "Interest in human resources and talent strategy.",
+      "Attention to detail and professionalism."
+    ]
+  },
+  {
+    "slug": "business-development-intern",
+    "title": "Business Development Intern",
+    "team": "Business internships",
+    "location": "Remote or Jaipur",
+    "summary": "Support our sales engine and client outreach.",
+    "about": "Support our sales engine and client outreach initiatives.",
+    "responsibilities": [
+      "Research and generate leads for our SaaS products.",
+      "Assist in client outreach and initial discovery calls.",
+      "Provide sales support and manage CRM data.",
+      "Analyze market trends and competitor presence."
+    ],
+    "requirements": [
+      "Strong communication and negotiation skills.",
+      "Persistence and a positive attitude.",
+      "Understanding of sales processes and lead gen.",
+      "Interest in business growth and SaaS."
+    ]
+  },
+  {
+    "slug": "campus-ambassador-campus-relations-intern",
+    "title": "Campus Ambassador / Campus Relations Intern",
+    "team": "Marketing and growth internships",
+    "location": "Remote or Jaipur",
+    "summary": "Connect Cynbit with the next generation of engineers on campus.",
+    "about": "Bridge the gap between Cynbit and the next generation of engineers.",
+    "responsibilities": [
+      "Establish and manage partnerships with top universities.",
+      "Organize and coordinate campus events and workshops.",
+      "Lead student onboarding for the BitElevate program.",
+      "Represent the Cynbit brand on college campuses."
+    ],
+    "requirements": [
+      "Current student at a recognized university.",
+      "Strong leadership and public speaking skills.",
+      "Excellent networking and relationship-building abilities.",
+      "Passionate about tech education and community."
+    ]
+  },
+  {
+    "slug": "social-media-brand-intern",
+    "title": "Social Media & Brand Intern",
+    "team": "Marketing and growth internships",
+    "location": "Remote or Jaipur",
+    "summary": "Build and manage our online community and brand.",
+    "about": "Build and manage our online community and brand identity.",
+    "responsibilities": [
+      "Build and maintain a strong online brand presence.",
+      "Create and manage content calendars for social platforms.",
+      "Engage with our digital community and architects.",
+      "Support brand awareness initiatives."
+    ],
+    "requirements": [
+      "Strong understanding of social media algorithms.",
+      "Creative content creation skills (visual and written).",
+      "Excellent communication and engagement skills.",
+      "Interest in tech and brand building."
+    ]
+  },
+  {
+    "slug": "content-marketing-intern",
+    "title": "Content Marketing Intern",
+    "team": "Marketing and growth internships",
+    "location": "Remote or Jaipur",
+    "summary": "Tell Cynbit's story through professional content.",
+    "about": "Craft the architectural narrative of Cynbit through professional content.",
+    "responsibilities": [
+      "Write high-quality technical and strategic blog posts.",
+      "Create engaging content for LinkedIn and social platforms.",
+      "Develop product documentation and case study copy.",
+      "Collaborate on content calendars and strategy."
+    ],
+    "requirements": [
+      "Excellent writing and editing skills in English.",
+      "Ability to simplify complex technical concepts.",
+      "Familiarity with SEO writing principles.",
+      "Creative storytelling ability."
+    ]
+  },
+  {
+    "slug": "growth-marketing-intern",
+    "title": "Growth Marketing Intern",
+    "team": "Marketing and growth internships",
+    "location": "Remote or Jaipur",
+    "summary": "Build growth experiments and user acquisition funnels.",
+    "about": "Engineer high-impact growth engines and user acquisition funnels.",
+    "responsibilities": [
+      "Generate and qualify high-value leads.",
+      "Optimize conversion funnels across digital platforms.",
+      "Implement user acquisition strategies.",
+      "Support growth initiatives through data analysis."
+    ],
+    "requirements": [
+      "Strong analytical and data-driven mindset.",
+      "Understanding of marketing funnels and lead gen.",
+      "Self-motivated and results-oriented.",
+      "Familiarity with growth hacking tools."
+    ]
+  },
+  {
+    "slug": "digital-marketing-intern",
+    "title": "Digital Marketing Intern",
+    "team": "Marketing and growth internships",
+    "location": "Remote or Jaipur",
+    "summary": "Drive our brand presence with data-driven marketing.",
+    "about": "Drive our brand presence through technical and data-driven marketing strategies.",
+    "responsibilities": [
+      "Execute SEO audits and optimization strategies.",
+      "Manage and track social media campaigns.",
+      "Assist in building and deploying email marketing funnels.",
+      "Analyze marketing data to improve performance."
+    ],
+    "requirements": [
+      "Knowledge of SEO tools and social media platforms.",
+      "Analytical skills and familiarity with data tools.",
+      "Strong communication and organizational skills.",
+      "Eagerness to learn digital marketing trends."
+    ]
+  },
+  {
+    "slug": "qa-testing-intern",
+    "title": "QA Testing Intern",
+    "team": "Tech internships",
+    "location": "Remote or Jaipur",
+    "summary": "Keep our SaaS products reliable through careful testing.",
+    "about": "Ensure the technical rigor and reliability of our proprietary SaaS suite.",
+    "responsibilities": [
+      "Perform comprehensive product testing and validation.",
+      "Identify, report, and track bugs using industry tools.",
+      "Validate user flows and edge cases.",
+      "Collaborate with dev teams to improve product quality."
+    ],
+    "requirements": [
+      "Understanding of software testing methodologies.",
+      "Strong analytical and observational skills.",
+      "Familiarity with automated testing tools is a plus.",
+      "Detail-oriented mindset."
+    ]
+  },
+  {
+    "slug": "ui-ux-design-intern",
+    "title": "UI/UX Design Intern",
+    "team": "Tech internships",
+    "location": "Remote or Jaipur",
+    "summary": "Turn complex workflows into clear, usable interfaces.",
+    "about": "Transform complex workflows into intuitive and high-impact digital experiences.",
+    "responsibilities": [
+      "Create low and high fidelity wireframes and prototypes in Figma.",
+      "Conduct user research and usability testing.",
+      "Design consistent and professional brand visuals.",
+      "Collaborate with developers to ensure design fidelity."
+    ],
+    "requirements": [
+      "Expertise in Figma and design tools.",
+      "Strong portfolio demonstrating UI/UX principles.",
+      "Understanding of human-centric design patterns.",
+      "Creative thinking and attention to detail."
+    ]
+  },
+  {
+    "slug": "backend-developer-intern",
+    "title": "Backend Developer Intern",
+    "team": "Tech internships",
+    "location": "Remote or Jaipur",
+    "summary": "Build the high-performance core of our software.",
+    "about": "Focus on building the high-performance core of our software architecture.",
+    "responsibilities": [
+      "Design and implement secure authentication systems.",
+      "Manage and optimize database schemas and queries.",
+      "Develop RESTful and GraphQL APIs.",
+      "Ensure system scalability and security."
+    ],
+    "requirements": [
+      "Proficiency in Node.js, Python, or Go.",
+      "Understanding of database management systems (PostgreSQL, MongoDB).",
+      "Knowledge of security best practices and auth protocols (OAuth, JWT).",
+      "Strong architectural thinking."
+    ]
+  },
+  {
+    "slug": "ai-ml-engineer-intern",
+    "title": "AI/ML Engineer Intern",
+    "team": "Tech internships",
+    "location": "Remote or Jaipur",
+    "summary": "Help build AI agents and AI-powered products for businesses.",
+    "about": "Help us engineer autonomous agents and AI-powered solutions for modern businesses.",
+    "responsibilities": [
+      "Build and deploy AI chatbots and virtual assistants.",
+      "Optimize prompt engineering for various LLM models.",
+      "Develop document extraction and processing pipelines.",
+      "Research and integrate emerging AI/ML technologies."
+    ],
+    "requirements": [
+      "Strong background in Python and machine learning concepts.",
+      "Familiarity with LLMs and prompt engineering.",
+      "Experience with AI frameworks (TensorFlow, PyTorch, or similar).",
+      "Analytical mindset and problem-solving skills."
+    ]
+  },
+  {
+    "slug": "full-stack-developer-intern",
+    "title": "Full Stack Developer Intern",
+    "team": "Tech internships",
+    "location": "Remote or Jaipur",
+    "summary": "Build scalable products across the stack with modern tools.",
+    "about": "Join our engineering team to build scalable digital ecosystems using modern tech stacks.",
+    "responsibilities": [
+      "Develop frontend components using React and Next.js.",
+      "Build and maintain backend APIs with Node.js or Python/Django.",
+      "Collaborate on database design and optimization.",
+      "Integrate third-party services and APIs."
+    ],
+    "requirements": [
+      "Strong understanding of HTML, CSS, and JavaScript.",
+      "Experience with React/Next.js frameworks.",
+      "Familiarity with Python/Django or Node.js.",
+      "Basic knowledge of SQL or NoSQL databases."
+    ]
+  },
+  {
+    "slug": "business-development-executive",
+    "title": "Business Development Executive",
+    "team": "Growth team",
+    "location": "Remote or Jaipur",
+    "summary": "Sales and client acquisition experience.",
+    "about": "Experience: Sales/client acquisition.",
+    "responsibilities": [
+      "Identify and capture high-value enterprise opportunities.",
+      "Manage the full sales cycle from discovery to closure.",
+      "Cultivate long-term relationships with key stakeholders.",
+      "Drive revenue growth through strategic client acquisition."
+    ],
+    "requirements": [
+      "Proven track record in B2B sales or business development.",
+      "Excellent negotiation and presentation skills.",
+      "Understanding of software solutions and enterprise needs.",
+      "Tenacious and performance-driven."
+    ]
+  },
+  {
+    "slug": "content-strategist",
+    "title": "Content Strategist",
+    "team": "Growth team",
+    "location": "Remote or Jaipur",
+    "summary": "Content and SEO strategy experience.",
+    "about": "Experience: Content + SEO strategy.",
+    "responsibilities": [
+      "Define and lead the content strategy for Cynbit.",
+      "Oversee production of technical blogs, reports, and whitepapers.",
+      "Align content initiatives with SEO and growth goals.",
+      "Ensure brand narrative consistency across all platforms."
+    ],
+    "requirements": [
+      "Strong background in content strategy and SEO.",
+      "Excellent portfolio of technical and strategic content.",
+      "Deep understanding of brand storytelling.",
+      "Ability to lead content creators and editors."
+    ]
+  },
+  {
+    "slug": "growth-manager",
+    "title": "Growth Manager",
+    "team": "Growth team",
+    "location": "Remote or Jaipur",
+    "summary": "Lead generation and growth strategy experience.",
+    "about": "Experience: Lead generation and growth strategies.",
+    "responsibilities": [
+      "Engineer and scale sustainable user acquisition engines.",
+      "Design and execute data-driven growth experiments.",
+      "Manage end-to-end sales and marketing funnels.",
+      "Lead strategic partnerships and client acquisition."
+    ],
+    "requirements": [
+      "Experience in scaling tech startups or SaaS products.",
+      "Expertise in growth hacking and funnel optimization.",
+      "Strong leadership and project management abilities.",
+      "Data-obsessed and results-oriented."
+    ]
+  },
+  {
+    "slug": "marketing-executive",
+    "title": "Marketing Executive",
+    "team": "Growth team",
+    "location": "Remote or Jaipur",
+    "summary": "1–2 years driving brand presence.",
+    "about": "Experience: 1–2 Years. Driving brand presence.",
+    "responsibilities": [
+      "Lead multi-channel marketing campaigns and brand strategy.",
+      "Optimize digital presence and market positioning.",
+      "Collaborate on narrative-led growth initiatives.",
+      "Manage marketing budgets and performance tracking."
+    ],
+    "requirements": [
+      "1–2 years of experience in digital marketing.",
+      "Proven track record of successful brand building.",
+      "Analytical mindset with focus on ROI.",
+      "Excellent communication and leadership skills."
+    ]
+  },
+  {
+    "slug": "devops-cloud-engineer",
+    "title": "DevOps / Cloud Engineer",
+    "team": "Core engineering team",
+    "location": "Remote or Jaipur",
+    "summary": "Experience with AWS, Docker and deployment pipelines.",
+    "about": "Experience: AWS, Docker, deployment pipelines.",
+    "responsibilities": [
+      "Manage and scale AWS-based cloud infrastructure.",
+      "Build and maintain CI/CD deployment pipelines.",
+      "Implement containerization using Docker and Kubernetes.",
+      "Ensure zero-trust security and infrastructure monitoring."
+    ],
+    "requirements": [
+      "Proven experience with AWS services and management.",
+      "Expertise in Docker and orchestration tools.",
+      "Strong understanding of networking and security.",
+      "Experience in automating infrastructure (IaC)."
+    ]
+  },
+  {
+    "slug": "backend-developer",
+    "title": "Backend Developer",
+    "team": "Core engineering team",
+    "location": "Remote or Jaipur",
+    "summary": "1–3 years building high-performance APIs.",
+    "about": "Experience: 1–3 Years. Focused on high-performance APIs.",
+    "responsibilities": [
+      "Architect high-performance distributed backend systems.",
+      "Optimize database performance and data reliability.",
+      "Implement secure and scalable system-to-system integrations.",
+      "Maintain architectural standards across all core services."
+    ],
+    "requirements": [
+      "1–3 years of experience in backend development.",
+      "Strong mastery of Node.js, Python, or Go.",
+      "Deep knowledge of PostgreSQL, Redis, and NoSQL.",
+      "Experience with microservices and system design."
+    ]
+  },
+  {
+    "slug": "ai-engineer",
+    "title": "AI Engineer",
+    "team": "Core engineering team",
+    "location": "Remote or Jaipur",
+    "summary": "1–3 years building AI agents.",
+    "about": "Experience: 1–3 Years. Engineering autonomous agents.",
+    "responsibilities": [
+      "Design and deploy advanced autonomous AI agents.",
+      "Optimize LLM performance for enterprise use cases.",
+      "Develop innovative AI-first learning tools.",
+      "Stay ahead of emerging AI/ML research and trends."
+    ],
+    "requirements": [
+      "1–3 years of experience in AI/ML engineering.",
+      "Deep understanding of LLMs, RAG, and prompt engineering.",
+      "Proficiency in Python and AI infrastructure.",
+      "Passion for pushing the boundaries of AI automation."
+    ]
+  },
+  {
+    "slug": "full-stack-developer",
+    "title": "Full Stack Developer",
+    "team": "Core engineering team",
+    "location": "Remote or Jaipur",
+    "summary": "1–3 years building scalable web products.",
+    "about": "Experience: 1–3 Years. Architecting scalable digital ecosystems.",
+    "responsibilities": [
+      "Lead end-to-end development of proprietary SaaS products.",
+      "Architect and implement scalable frontend and backend systems.",
+      "Ensure 99.9% system stability and technical rigor.",
+      "Mentor interns and contribute to technical blueprints."
+    ],
+    "requirements": [
+      "1–3 years of professional experience in full-stack dev.",
+      "Expertise in React, Next.js, Node.js, and TypeScript.",
+      "Strong knowledge of cloud deployment and security.",
+      "History of building and scaling production platforms."
+    ]
+  }
+]
