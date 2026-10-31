@@ -1,0 +1,68 @@
+{
+  "tracks": [
+    {
+      "name": "Full stack web development",
+      "note": ""
+    },
+    {
+      "name": "Digital marketing",
+      "note": ""
+    },
+    {
+      "name": "UI/UX design",
+      "note": ""
+    },
+    {
+      "name": "Artificial Intelligence (AI)",
+      "note": "Adaptive neural frameworks."
+    },
+    {
+      "name": "Machine learning (ML)",
+      "note": ""
+    },
+    {
+      "name": "Data science",
+      "note": ""
+    },
+    {
+      "name": "Data analytics",
+      "note": ""
+    },
+    {
+      "name": "DevOps",
+      "note": "Continuous integration. Zero friction."
+    },
+    {
+      "name": "Cloud computing",
+      "note": "AWS / Azure / GCP"
+    },
+    {
+      "name": "Cybersecurity",
+      "note": ""
+    },
+    {
+      "name": "Blockchain development",
+      "note": ""
+    },
+    {
+      "name": "Internet of things",
+      "note": ""
+    },
+    {
+      "name": "Social media management",
+      "note": ""
+    },
+    {
+      "name": "Deep learning",
+      "note": ""
+    },
+    {
+      "name": "Natural language processing (NLP)",
+      "note": ""
+    },
+    {
+      "name": "Business analytics",
+      "note": ""
+    }
+  ]
+}

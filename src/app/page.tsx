@@ -3,6 +3,7 @@ import Link from "next/link";
 import { ArrowUpRight } from "lucide-react";
 import { CtaBand } from "@/components/CtaBand";
 import { ProductWindow } from "@/components/ProductWindow";
+import { Dashboard, LeadDesk, Revio, Studio, TenantEase } from "@/components/scenes";
 import { SkyCanvas } from "@/components/SkyCanvas";
 import { founders, stack, steps, story } from "@/content/company";
 import { LIVE, contact } from "@/lib/site";
@@ -198,10 +199,7 @@ export default function Home() {
               <span style={{ "--d": "120ms" } as React.CSSProperties}>Designed and built in Jaipur.</span>
             </span>
           </h1>
-          <p
-            className="intro-fade mx-auto mt-6 max-w-xl text-lg leading-relaxed text-white/90"
-            style={{ "--d": "300ms" } as React.CSSProperties}
-          >
+          <p className="mx-auto mt-6 max-w-xl text-lg leading-relaxed text-white/90">
             Cynbit builds AI agents, custom platforms and growth systems for companies that have outgrown spreadsheets
             and off-the-shelf tools.
           </p>
@@ -246,11 +244,11 @@ export default function Home() {
         </section>
 
         <div className="-mt-28">
-          <ProductWindow />
+          <ProductWindow bodies={[<LeadDesk key="a" />, <Dashboard key="b" />, <Studio key="c" />, <TenantEase key="d" />, <Revio key="e" />]} />
         </div>
       </div>
 
-      <section aria-labelledby="services-title" id="services" className="mx-auto max-w-6xl scroll-mt-20 px-4 py-20 sm:px-6 md:py-24">
+      <section aria-labelledby="services-title" data-defer id="services" className="mx-auto max-w-6xl scroll-mt-20 px-4 py-20 sm:px-6 md:py-24">
         <SectionHead id="services-title" title="What we're good at">
           Most projects touch two or three of these. One team owns the whole thing, from first sketch to the
           servers it runs on.
@@ -271,7 +269,7 @@ export default function Home() {
         </ul>
       </section>
 
-      <section aria-labelledby="work-title" id="work" className="mx-auto max-w-6xl scroll-mt-20 px-4 py-20 sm:px-6 md:py-24">
+      <section aria-labelledby="work-title" data-defer id="work" className="mx-auto max-w-6xl scroll-mt-20 px-4 py-20 sm:px-6 md:py-24">
         <SectionHead id="work-title" title="Recent work">
           A few projects from our case studies, with the numbers our clients reported.
         </SectionHead>
@@ -314,7 +312,7 @@ export default function Home() {
         </figure>
       </section>
 
-      <section aria-labelledby="team-title" id="team" className="border-y border-line bg-deep">
+      <section aria-labelledby="team-title" data-defer id="team" className="border-y border-line bg-deep">
         <div className="mx-auto max-w-6xl px-4 py-20 sm:px-6 md:py-24">
           <div className="grid gap-12 lg:grid-cols-[1fr_1.6fr]">
             <div className="max-w-md">
@@ -362,7 +360,7 @@ export default function Home() {
         </div>
       </section>
 
-      <section aria-labelledby="process-title" className="mx-auto max-w-6xl px-4 py-20 sm:px-6 md:py-24">
+      <section aria-labelledby="process-title" data-defer className="mx-auto max-w-6xl px-4 py-20 sm:px-6 md:py-24">
         <SectionHead id="process-title" title="How a project runs">
           Big platform or small automation, every project goes through the same four stages.
         </SectionHead>
@@ -377,7 +375,7 @@ export default function Home() {
         </ol>
       </section>
 
-      <section aria-labelledby="bitelevate-title" className="mx-auto max-w-6xl px-4 sm:px-6">
+      <section aria-labelledby="bitelevate-title" data-defer className="mx-auto max-w-6xl px-4 sm:px-6">
         <div className="reveal grid gap-8 rounded-3xl bg-teal p-8 text-ink sm:p-12 md:grid-cols-[1fr_auto] md:items-end">
           <div className="max-w-2xl">
             <h2 id="bitelevate-title" className="text-3xl font-semibold tracking-[-0.035em] text-balance sm:text-4xl">
@@ -398,7 +396,7 @@ export default function Home() {
         </div>
       </section>
 
-      <section aria-labelledby="faq-title" className="mx-auto grid max-w-6xl gap-10 px-4 py-24 sm:px-6 md:grid-cols-[1fr_1.4fr] md:py-32">
+      <section aria-labelledby="faq-title" data-defer className="mx-auto grid max-w-6xl gap-10 px-4 py-24 sm:px-6 md:grid-cols-[1fr_1.4fr] md:py-32">
         <h2 id="faq-title" className="text-title font-semibold text-balance md:sticky md:top-28 md:self-start">
           What people ask us first
         </h2>

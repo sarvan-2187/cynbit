@@ -1,18 +1,28 @@
-# Cynbit website: homepage and lead pipeline rebuild
+# Cynbit website rebuild
+
+![Cynbit homepage hero: live sky, headline and product window](docs/hero.jpg)
+
+**Live:** https://cynbit.vercel.app
 
 A working prototype of a faster, clearer cynbit.in homepage and a hardened contact form backend.
 Built for the Cynbit Full Stack Developer Intern assessment.
 
 ## What's in it
 
+89 pages, with all content migrated from the live site:
+
 | Route | What it does |
 |---|---|
-| `/` | New homepage: hero, a pinned product window that walks through Cynbit's AI agents, dashboards, Cynbit Studio, TenantEase and Revio as you scroll, services, results, process, BitElevate, FAQ |
-| `/contact` | Project enquiry form backed by a server action: validation, honeypot, rate limit, database, optional email alert |
-| `/opengraph-image` | PNG link preview generated at build time |
-| `/robots.txt`, `/sitemap.xml` | Generated from code |
+| `/` | Homepage: live sky hero, a product window that steps through AI agents, dashboards, Cynbit Studio, TenantEase and Revio, then services, work, team, process, BitElevate and FAQ |
+| `/services`, `/products`, `/case-studies`, `/careers`, `/blog` | Section pages |
+| `/case-studies/[slug]`, `/careers/[slug]`, `/blog/[slug]` | 13 case studies, 20 job pages (each with a six-field application form) and 25 articles |
+| `/story`, `/team`, `/impact`, `/bitelevate`, `/bitelevate/paths` | Company and programme pages |
+| `/diaries`, `/diaries/[slug]` | Student diaries: index plus 8 stories |
+| `/privacy`, `/terms`, `/cookies` | Legal pages, text unchanged from the live site |
+| `/contact` | Project enquiry form: server-side validation, honeypot, rate limit, database, optional email alert |
+| `/opengraph-image`, `/robots.txt`, `/sitemap.xml` | Generated from code |
 
-Pages outside this scope (blog, careers, case studies and so on) link to the live site.
+Only BitElevate enrolment still goes to the live site, because that is where enrolment and payment happen.
 
 ## Run it locally
 
@@ -42,20 +52,25 @@ Copy `.env.example` to `.env.local` (or set the variables in Vercel):
 
 ## Results
 
-Lighthouse 12.8, mobile preset (simulated mid-range phone on a throttled 4G connection), 31 Oct 2026.
-The live site was measured at cynbit.in; the prototype was measured as a production build served locally,
-so re-run against the deployed URL for a like-for-like network comparison.
+Lighthouse 12.8, mobile preset (simulated mid-range phone on throttled 4G), 31 Oct 2026. Both sites were
+measured over the internet: the original at www.cynbit.in and the rebuild at cynbit.vercel.app.
 
-| Page | Performance | Accessibility | Best practices | SEO | First paint | Largest paint | Page weight | Requests |
-|---|---|---|---|---|---|---|---|---|
-| Live home | 56 | 82 | 100 | 100 | 9.4 s | 11.3 s | 1,685 KB | 45 |
-| **New home** | **98** | **100** | 100 | 100 | 1.2 s | 2.3 s | 241 KB | 18 |
-| Live contact | 56 | 90 | 100 | 100 | 9.2 s | 11.1 s | 1,679 KB | 44 |
-| **New contact** | **98** | **100** | 100 | 100 | 1.1 s | 2.4 s | 227 KB | 15 |
+| Page | Performance | Accessibility | Best practices | SEO | First paint | Largest paint | Page weight |
+|---|---|---|---|---|---|---|---|
+| Original home | 56 | 82 | 100 | 100 | 9.5 s | 11.4 s | 1,685 KB |
+| **Rebuilt home** | **85** | **100** | 100 | 100 | 1.7 s | 2.9 s | 283 KB |
+| Original contact | 56 | 86 | 100 | 100 | 9.1 s | 11.0 s | 1,680 KB |
+| **Rebuilt contact** | **99** | **100** | 100 | 100 | 1.0 s | 2.0 s | 241 KB |
+| Rebuilt article | 96 | 100 | 100 | 100 | 1.0 s | 2.7 s | 379 KB |
+| Rebuilt job page | 93 | 100 | 100 | 100 | 1.0 s | 2.5 s | 248 KB |
+
+The home page scores lowest because of the live sky behind the hero. It starts on the visitor's first
+interaction and switches itself off on slow devices, but the work still shows up in blocking time.
+Scores move a few points between runs.
 
 Where the weight went: the live site loads the full 1.1 MB Material Symbols variable font to draw 39 icons
-and keeps content invisible until scroll animations run. The prototype ships tree-shaken SVG icons, one
-42 KB self-hosted variable font, and server-rendered content that is visible without JavaScript.
+and keeps content invisible until scroll animations run. The rebuild ships tree-shaken SVG icons, self-hosted
+fonts, and server-rendered content that is visible without JavaScript.
 
 ## Stack
 
@@ -66,5 +81,5 @@ Motion is CSS only: a one-off hero entrance, scroll-linked reveals (`animation-t
 responses to clicks and hovers. Content is visible without JavaScript, browsers without scroll timelines
 simply show the finished page, and everything is switched off under `prefers-reduced-motion`.
 
-Type is Satoshi by Indian Type Foundry (Fontshare, free for commercial use), self-hosted from `src/fonts`.
+Type is Geist (SIL Open Font License) for text and JetBrains Mono for code, both self-hosted by `next/font`.
 Light theme by default; the moon button in the header switches to dark and remembers the choice.

@@ -1,7 +1,7 @@
 import Link from "next/link";
 import { NewsletterForm } from "@/components/forms";
 import { Logo } from "@/components/Logo";
-import { LIVE, contact, tel } from "@/lib/site";
+import { contact, tel } from "@/lib/site";
 
 const columns = [
   {
@@ -26,9 +26,9 @@ const columns = [
     title: "Learn",
     links: [
       ["BitElevate", "/bitelevate"],
-      ["Career paths", `${LIVE}/bitelevate/paths`],
+      ["Career paths", "/bitelevate/paths"],
       ["Blog", "/blog"],
-      ["Student diaries", `${LIVE}/diaries`],
+      ["Student diaries", "/diaries"],
     ],
   },
 ];
@@ -83,9 +83,9 @@ export function Footer() {
       <div className="mx-auto flex max-w-6xl flex-wrap justify-between gap-4 border-t border-line px-4 py-6 text-sm text-dim sm:px-6">
         <p>© {new Date().getFullYear()} Cynbit Technologies</p>
         <ul className="flex gap-5">
-          <li><a href={`${LIVE}/privacy`} className="hover:text-paper">Privacy</a></li>
-          <li><a href={`${LIVE}/terms`} className="hover:text-paper">Terms</a></li>
-          <li><a href={`${LIVE}/cookies`} className="hover:text-paper">Cookies</a></li>
+          <li><Link href="/privacy" className="hover:text-paper">Privacy</Link></li>
+          <li><Link href="/terms" className="hover:text-paper">Terms</Link></li>
+          <li><Link href="/cookies" className="hover:text-paper">Cookies</Link></li>
         </ul>
       </div>
     </footer>

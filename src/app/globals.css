@@ -123,6 +123,9 @@ body {
 
 .theme-switching * { transition: none !important; }
 
+/* Sections below the fold are not laid out or painted until they near the viewport. */
+[data-defer] { content-visibility: auto; contain-intrinsic-size: auto 900px; }
+
 /* Long-form article text migrated from the old blog. */
 .article { font-size: 1.125rem; line-height: 1.75; color: var(--mist); }
 .article > * + * { margin-top: 1.25em; }

@@ -2,7 +2,6 @@
 
 import { useEffect, useRef, useState } from "react";
 import { Bot, Building2, Code2, LayoutDashboard, Star } from "lucide-react";
-import { Dashboard, LeadDesk, Revio, Studio, TenantEase } from "./scenes";
 import { TitleBar } from "./TitleBar";
 
 const scenes = [
@@ -10,7 +9,6 @@ const scenes = [
     tab: "AI agents",
     app: "Lead desk",
     Icon: Bot,
-    Body: LeadDesk,
     lead: "Leads answered in seconds.",
     rest: "Agents reply on WhatsApp and email, qualify the enquiry and book the call while your team is offline.",
   },
@@ -18,7 +16,6 @@ const scenes = [
     tab: "Dashboards",
     app: "Operations dashboard",
     Icon: LayoutDashboard,
-    Body: Dashboard,
     lead: "Every number on one screen.",
     rest: "Custom dashboards that pull sales, operations and support data together and keep it current.",
   },
@@ -26,7 +23,6 @@ const scenes = [
     tab: "Cynbit Studio",
     app: "Cynbit Studio",
     Icon: Code2,
-    Body: Studio,
     lead: "Cynbit Studio.",
     rest: "Adaptive coding missions with AI code review, so students build proof of skill instead of collecting certificates.",
   },
@@ -34,7 +30,6 @@ const scenes = [
     tab: "TenantEase",
     app: "TenantEase",
     Icon: Building2,
-    Body: TenantEase,
     lead: "TenantEase.",
     rest: "Properties, tenants and rent in one place, with payment reminders that go out on their own.",
   },
@@ -42,7 +37,6 @@ const scenes = [
     tab: "Revio",
     app: "Revio",
     Icon: Star,
-    Body: Revio,
     lead: "Revio.",
     rest: "Reviews from Google and social in one feed, with AI-drafted replies and sentiment for every branch.",
   },
@@ -52,7 +46,8 @@ const scenes = [
 const PIN = "(min-width: 768px) and (prefers-reduced-motion: no-preference)";
 const NAV = 80;
 
-export function ProductWindow() {
+// `bodies` are server-rendered mock screens (one per scene, same order), so their markup never ships as client JS.
+export function ProductWindow({ bodies }: { bodies: React.ReactNode[] }) {
   const [active, setActive] = useState(0);
   const ref = useRef<HTMLElement>(null);
 
@@ -140,7 +135,7 @@ export function ProductWindow() {
               {/* All scenes share one grid cell so the frame keeps a stable height. */}
               {/* Small UI text reads thin at weight 400, so the mock-ups use weight 450. */}
               <div className="grid p-3 font-[450] sm:p-5 md:h-[min(62vh,600px)]">
-                {scenes.map(({ tab, Body }, i) => (
+                {scenes.map(({ tab }, i) => (
                   <div
                     key={tab}
                     aria-hidden={i !== active}
@@ -149,7 +144,7 @@ export function ProductWindow() {
                       i === active ? "translate-y-0 opacity-100" : "translate-y-3 opacity-0"
                     }`}
                   >
-                    <Body />
+                    {bodies[i]}
                   </div>
                 ))}
               </div>

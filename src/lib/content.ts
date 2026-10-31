@@ -1,6 +1,9 @@
 import blog from "@/content/blog.json";
 import cases from "@/content/cases.json";
 import careers from "@/content/careers.json";
+import diaryData from "@/content/diaries.json";
+import legalData from "@/content/legal.json";
+import pathData from "@/content/paths.json";
 
 // Content migrated from cynbit.in by research/scripts/scrape.mjs.
 
@@ -41,3 +44,11 @@ export function readingMinutes(post: Post) {
     .split(/\s+/).length;
   return Math.max(1, Math.round(words / 220));
 }
+
+export type Diary = (typeof diaryData)[number];
+export type LegalDoc = (typeof legalData)[number];
+export const diaries: Diary[] = diaryData;
+export const legalDocs: LegalDoc[] = legalData;
+export const learningTracks = pathData.tracks;
+export const getDiary = (slug: string) => diaries.find((d) => d.slug === slug);
+export const getLegal = (slug: string) => legalDocs.find((d) => d.slug === slug);

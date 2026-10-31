@@ -1,6 +1,7 @@
 "use client";
 
 import { useActionState } from "react";
+import { useSearchParams } from "next/navigation";
 import { submitApplication, submitLead, subscribe, type FormState } from "@/app/actions";
 import { needs } from "@/lib/site";
 
@@ -44,7 +45,10 @@ const a11y = (name: string, state: FormState) => ({
   "aria-describedby": state.errors?.[name] ? `${name}-error` : undefined,
 });
 
-export function ContactForm({ defaultNeed }: { defaultNeed?: string }) {
+// ?need=products (from a product demo button) pre-selects that option. Read here so the page itself stays static.
+export function ContactForm() {
+  const asked = useSearchParams().get("need") ?? "";
+  const defaultNeed = asked in needs ? asked : undefined;
   const [state, action, pending] = useActionState(submitLead, initial);
 
   if (state.ok) {

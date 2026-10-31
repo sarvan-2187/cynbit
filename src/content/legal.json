@@ -1,0 +1,116 @@
+[
+  {
+    "slug": "privacy",
+    "title": "Privacy policy",
+    "updated": "May 20, 2026",
+    "sections": [
+      {
+        "heading": "1. Data Sovereignty",
+        "paragraphs": [
+          "At Cynbit Technologies, we believe you should own your data. We only collect the minimum information necessary to provide our services—typically your name, email, and professional context when you reach out via our forms."
+        ]
+      },
+      {
+        "heading": "2. How We Use Information",
+        "paragraphs": [
+          "Information provided via our inquiry forms or BitElevate applications is used strictly to communicate with you about your request. We do not sell, rent, or trade your data to third parties for marketing purposes."
+        ]
+      },
+      {
+        "heading": "3. Security Standards",
+        "paragraphs": [
+          "We employ industry-standard encryption and optimistic architecture patterns to ensure that any data stored within our systems (such as blog comments or diary entries) is protected against unauthorized access."
+        ]
+      },
+      {
+        "heading": "4. Third-Party Services",
+        "paragraphs": [
+          "We use trusted partners like Resend for email delivery and Prisma for database management. These partners are vetted for their own rigorous privacy standards and only process data as instructed by us."
+        ]
+      },
+      {
+        "heading": "5. Your Rights",
+        "paragraphs": [
+          "You have the right to request a copy of the data we hold about you, or to request its permanent deletion from our records. Simply contact us at opportunities@cynbit.in to initiate a request."
+        ]
+      }
+    ]
+  },
+  {
+    "slug": "terms",
+    "title": "Terms of service",
+    "updated": "May 20, 2026",
+    "sections": [
+      {
+        "heading": "1. Agreement to Terms",
+        "paragraphs": [
+          "By accessing cynbit.in, you agree to be bound by these Terms of Service. If you do not agree with any part of these terms, please refrain from using our digital platforms."
+        ]
+      },
+      {
+        "heading": "2. Intellectual Property",
+        "paragraphs": [
+          "All content on this website—including code snippets, architectural diagrams, blog articles, and brand visuals—is the exclusive property of Cynbit Technologies unless otherwise stated. Unauthorized reproduction is strictly prohibited."
+        ]
+      },
+      {
+        "heading": "3. Service Inquiries",
+        "paragraphs": [
+          "Submitting an inquiry form does not establish a formal contract for services. A binding agreement is only formed once a dedicated Statement of Work (SOW) is signed by both parties."
+        ]
+      },
+      {
+        "heading": "4. BitElevate Program",
+        "paragraphs": [
+          "Applicants to the BitElevate initiative acknowledge that selection is competitive and at the sole discretion of Cynbit Technologies. Participation is subject to the program's specific code of conduct."
+        ]
+      },
+      {
+        "heading": "5. Limitation of Liability",
+        "paragraphs": [
+          "While we strive for architectural perfection, Cynbit Technologies is not liable for any direct or indirect damages arising from the use or inability to use the information provided on this website."
+        ]
+      }
+    ]
+  },
+  {
+    "slug": "cookies",
+    "title": "Cookie policy",
+    "updated": "May 20, 2026",
+    "sections": [
+      {
+        "heading": "",
+        "paragraphs": [
+          "We use cookies to provide a seamless digital experience. Cookies are small text files stored on your device that help us analyze traffic and remember your preferences. We do not use cookies to track you across unrelated third-party websites."
+        ]
+      },
+      {
+        "heading": "Essential Cookies",
+        "paragraphs": [
+          "Required for basic site functionality, such as form submissions and security headers. These cannot be disabled.",
+          "Session tokens, CSRF protection."
+        ]
+      },
+      {
+        "heading": "Analytics Cookies",
+        "paragraphs": [
+          "Help us understand how visitors interact with our content, allowing us to optimize page load speeds and content relevance.",
+          "Google Analytics (anonymous), Page interaction metrics."
+        ]
+      },
+      {
+        "heading": "Functional Cookies",
+        "paragraphs": [
+          "Remember your preferences, such as your dark/light mode choice or previously filled form fields for your convenience.",
+          "Theme selection, Form persistence."
+        ]
+      },
+      {
+        "heading": "Managing Cookies",
+        "paragraphs": [
+          "You can control or delete cookies through your browser settings. However, disabling essential cookies may prevent certain features of the website (like inquiry forms) from functioning correctly."
+        ]
+      }
+    ]
+  }
+]

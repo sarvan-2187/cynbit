@@ -2,7 +2,6 @@ import type { Metadata } from "next";
 import Link from "next/link";
 import { CtaBand } from "@/components/CtaBand";
 import { PageIntro } from "@/components/PageIntro";
-import { LIVE } from "@/lib/site";
 
 export const metadata: Metadata = {
   title: "Social impact",
@@ -54,9 +53,9 @@ export default function ImpactPage() {
         </div>
         <p className="reveal mt-8 text-mist">
           Students write about this side of college in our{" "}
-          <a href={`${LIVE}/diaries`} className="font-semibold text-teal hover:underline">
+          <Link href="/diaries" className="font-semibold text-teal hover:underline">
             student diaries
-          </a>
+          </Link>
           .
         </p>
       </section>

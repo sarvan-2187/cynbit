@@ -1,7 +1,6 @@
 import type { Metadata } from "next";
+import { Suspense } from "react";
 import { ContactForm } from "@/components/forms";
-import { JaipurTime } from "@/components/JaipurTime";
-import { contact, needs, tel } from "@/lib/site";
 
 export const metadata: Metadata = {
   title: "Start a project",
@@ -10,10 +9,7 @@ export const metadata: Metadata = {
   alternates: { canonical: "/contact" },
 };
 
-// ?need=products (from a product's demo button) pre-selects that option in the form.
-export default async function ContactPage({ searchParams }: { searchParams: Promise<{ need?: string }> }) {
-  const { need } = await searchParams;
-  const defaultNeed = need && need in needs ? need : undefined;
+export default function ContactPage() {
   return (
     <div className="horizon">
       <section className="mx-auto grid max-w-6xl gap-12 px-4 pb-24 pt-16 sm:px-6 md:pt-24 lg:grid-cols-[1fr_1.35fr]">
@@ -31,37 +27,27 @@ export default async function ContactPage({ searchParams }: { searchParams: Prom
             up a discovery call if we&apos;re a good fit.
           </p>
 
-          <dl className="mt-12 grid gap-6 border-t border-line pt-8 text-[15px]">
-            <div>
-              <dt className="text-dim">Email</dt>
-              <dd className="mt-1">
-                <a href={`mailto:${contact.email}`} className="text-paper hover:text-teal">
-                  {contact.email}
-                </a>
-              </dd>
-            </div>
-            <div>
-              <dt className="text-dim">Phone</dt>
-              {contact.phones.map((p) => (
-                <dd key={p} className="mt-1">
-                  <a href={tel(p)} className="text-paper hover:text-teal">
-                    {p}
-                  </a>
-                </dd>
-              ))}
-            </div>
-            <div>
-              <dt className="text-dim">Office</dt>
-              <dd className="mt-1 text-paper">{contact.address}</dd>
-              <dd className="mt-1 text-mist">
-                <JaipurTime />
-              </dd>
-            </div>
-          </dl>
+          <ol className="mt-12 grid gap-5 border-t border-line pt-8">
+            {[
+              ["We read it", "Someone on the team reads your message the same working day."],
+              ["We reply within 24 hours", "With questions, or a time for a short discovery call."],
+              ["You get a plan", "A written outline of what we'd build, how long it takes and what it costs."],
+            ].map(([t, d], i) => (
+              <li key={t} className="grid grid-cols-[28px_1fr] gap-3">
+                <span className="grid size-7 place-items-center rounded-full border border-line text-sm text-teal">{i + 1}</span>
+                <div>
+                  <p className="font-semibold">{t}</p>
+                  <p className="text-[15px] leading-relaxed text-mist">{d}</p>
+                </div>
+              </li>
+            ))}
+          </ol>
         </div>
 
         <div className="intro-fade" style={{ "--d": "300ms" } as React.CSSProperties}>
-          <ContactForm defaultNeed={defaultNeed} />
+          <Suspense fallback={<div className="h-[520px] rounded-3xl border border-line bg-panel/60" />}>
+            <ContactForm />
+          </Suspense>
         </div>
       </section>
     </div>

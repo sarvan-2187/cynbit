@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import Link from "next/link";
 import { Check, Minus } from "lucide-react";
 import { PageIntro } from "@/components/PageIntro";
 import { TitleBar } from "@/components/TitleBar";
@@ -61,12 +62,12 @@ export default function BitElevatePage() {
         <a href={ENROL} className="rounded-full bg-teal px-6 py-3 font-semibold text-ink transition-colors hover:bg-paper">
           Enrol on BitElevate
         </a>
-        <a
-          href={`${LIVE}/bitelevate/paths`}
+        <Link
+          href="/bitelevate/paths"
           className="rounded-full border border-line px-6 py-3 font-semibold transition-colors hover:border-paper/50"
         >
           Design your own path
-        </a>
+        </Link>
       </PageIntro>
 
       <section aria-labelledby="compare-title" className="mx-auto max-w-6xl px-4 pb-20 sm:px-6">

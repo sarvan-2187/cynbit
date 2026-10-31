@@ -93,15 +93,16 @@ export function Studio() {
     ["Code quality", 71],
   ] as const;
   return (
-    <div className="grid h-full gap-3 md:grid-cols-[1.4fr_1fr]">
+    <div className="@container h-full">
+    <div className="grid h-full gap-3 @3xl:grid-cols-[1.4fr_1fr]">
       <div className={`${card} flex flex-col overflow-hidden`}>
         <p className="border-b border-line px-4 py-2 text-[13px] text-mist">Mission 14: build a rate limiter</p>
-        <pre className="overflow-hidden p-4 font-mono text-[13px] leading-relaxed text-mist">
+        <pre className="overflow-x-auto p-4 font-mono text-[13px] leading-relaxed text-mist [font-variant-ligatures:none]">
           <code>
-            <span className="text-teal">function</span> allow(key, limit, windowMs) {"{"}
+            <span className="text-teal">function</span> allow(key, limit, ms) {"{"}
             {"\n"}  <span className="text-teal">const</span> now = Date.now();
             {"\n"}  <span className="text-teal">const</span> recent = hits.get(key)
-            {"\n"}    .filter(t =&gt; now - t &lt; windowMs);
+            {"\n"}    .filter(t =&gt; now - t &lt; ms);
             {"\n"}  <span className="text-teal">if</span> (recent.length &gt;= limit) <span className="text-teal">return</span> <span className="text-amber">false</span>;
             {"\n"}  hits.set(key, [...recent, now]);
             {"\n"}  <span className="text-teal">return</span> <span className="text-amber">true</span>;
@@ -145,6 +146,7 @@ export function Studio() {
         </div>
       </div>
     </div>
+    </div>
   );
 }
 
@@ -165,7 +167,8 @@ export function TenantEase() {
     ["Flat 103", "Rohan V.", "₹11,000", "Paid 3 Oct", "text-teal"],
   ];
   return (
-    <div className="grid h-full gap-3 md:grid-cols-[1.1fr_1fr]">
+    <div className="@container h-full">
+    <div className="grid h-full gap-3 @3xl:grid-cols-[1.1fr_1fr]">
       <div className={`${card} flex flex-col p-4`}>
         <div className="flex items-baseline justify-between">
           <p className="text-[14px] font-semibold">Shanti Residency</p>
@@ -224,6 +227,7 @@ export function TenantEase() {
           ))}
         </ul>
       </div>
+    </div>
     </div>
   );
 }
