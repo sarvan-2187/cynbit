@@ -53,24 +53,28 @@ Copy `.env.example` to `.env.local` (or set the variables in Vercel):
 ## Results
 
 Lighthouse 12.8, mobile preset (simulated mid-range phone on throttled 4G), 31 Oct 2026. Both sites were
-measured over the internet: the original at www.cynbit.in and the rebuild at cynbit.vercel.app.
+measured over the internet: the original at www.cynbit.in and the rebuild at https://cynbit.vercel.app.
 
-| Page | Performance | Accessibility | Best practices | SEO | First paint | Largest paint | Page weight |
-|---|---|---|---|---|---|---|---|
-| Original home | 56 | 82 | 100 | 100 | 9.5 s | 11.4 s | 1,685 KB |
-| **Rebuilt home** | **85** | **100** | 100 | 100 | 1.7 s | 2.9 s | 283 KB |
-| Original contact | 56 | 86 | 100 | 100 | 9.1 s | 11.0 s | 1,680 KB |
-| **Rebuilt contact** | **99** | **100** | 100 | 100 | 1.0 s | 2.0 s | 241 KB |
-| Rebuilt article | 96 | 100 | 100 | 100 | 1.0 s | 2.7 s | 379 KB |
-| Rebuilt job page | 93 | 100 | 100 | 100 | 1.0 s | 2.5 s | 248 KB |
+| Page | Performance | Accessibility | Best practices | SEO | First paint | Largest paint | Blocking time | Page weight |
+|---|---|---|---|---|---|---|---|---|
+| Original home | 56 | 82 | 100 | 100 | 9.5 s | 11.4 s | 0 ms | 1,685 KB |
+| **Rebuilt home** | **95** | **100** | 100 | 100 | 1.4 s | 2.4 s | 20 ms | 287 KB |
+| Original contact | 56 | 86 | 100 | 100 | 9.1 s | 11.0 s | 0 ms | 1,680 KB |
+| **Rebuilt contact** | **98** | **100** | 100 | 100 | 0.9 s | 1.8 s | 20 ms | 200 KB |
+| Rebuilt services | 99 | 100 | 100 | 100 | 1.0 s | 2.1 s | 60 ms | 204 KB |
+| Rebuilt job page | 97 | 100 | 100 | 100 | 0.9 s | 2.0 s | 180 ms | 209 KB |
+| Rebuilt article | 93 | 100 | 100 | 100 | 1.2 s | 2.7 s | 200 ms | 340 KB |
+| Rebuilt case study | 99 | 100 | 100 | 100 | 0.9 s | 2.3 s | 60 ms | 277 KB |
+| Rebuilt diaries | 96 | 100 | 100 | 100 | 0.9 s | 2.2 s | 40 ms | 217 KB |
+| Rebuilt privacy | 98 | 100 | 100 | 100 | 0.9 s | 1.8 s | 60 ms | 201 KB |
+| Rebuilt career paths | 96 | 100 | 100 | 100 | 1.2 s | 2.4 s | 60 ms | 250 KB |
 
-The home page scores lowest because of the live sky behind the hero. It starts on the visitor's first
-interaction and switches itself off on slow devices, but the work still shows up in blocking time.
-Scores move a few points between runs.
+The original was measured on the home and contact pages only. Scores move a few points between runs.
 
-Where the weight went: the live site loads the full 1.1 MB Material Symbols variable font to draw 39 icons
-and keeps content invisible until scroll animations run. The rebuild ships tree-shaken SVG icons, self-hosted
-fonts, and server-rendered content that is visible without JavaScript.
+What changed, in order of impact: the 1.1 MB icon font became inline SVG icons; content is rendered visible
+instead of waiting for scroll animations to run; the five product mock-ups are rendered on the server so they
+add no client JavaScript; pages are pre-rendered as static HTML; and the live sky behind the hero only starts
+after the visitor's first interaction.
 
 ## Stack
 
